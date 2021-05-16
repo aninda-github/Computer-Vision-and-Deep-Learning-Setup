@@ -398,3 +398,15 @@ Once done, just run make from the darknet folder.
     make
 
 Refer [here](https://pjreddie.com/darknet/yolo/) for more details on running YOLO and training the network.
+
+
+##### Current Setup (Added by Aninda)
+- OS - ubuntu 20.04
+- Nvidia Driver - 460.73.01
+- CUDA - 11.2
+- CUDNN - 8.1.0
+- OpenCV - 4.5.1
+
+Followed this article for installing the perfect version compatibility
+https://towardsdatascience.com/yolov4-with-cuda-powered-opencv-dnn-2fef48ea3984
+
