@@ -410,3 +410,38 @@ Refer [here](https://pjreddie.com/darknet/yolo/) for more details on running YOL
 Followed this article for installing the perfect version compatibility
 https://towardsdatascience.com/yolov4-with-cuda-powered-opencv-dnn-2fef48ea3984
 
+Along with the same will use the following CMAKE for local and isolated installation
+
+```
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
+-D CMAKE_C_COMPILER=/usr/bin/gcc \
+-D CMAKE_INSTALL_PREFIX=$CONDA_PREFIX \
+-D INSTALL_PYTHON_EXAMPLES=ON \
+-D INSTALL_C_EXAMPLES=ON \
+-D WITH_TBB=ON \
+-D WITH_CUDA=ON \
+-D WITH_CUDNN=ON \
+-D OPENCV_DNN_CUDA=ON \
+-D CUDA_ARCH_BIN=7.5 \
+-D BUILD_opencv_cudacodec=OFF \
+-D ENABLE_FAST_MATH=1 \
+-D CUDA_FAST_MATH=1 \
+-D WITH_CUBLAS=1 \
+-D WITH_V4L=ON \
+-D WITH_QT=OFF \
+-D WITH_OPENGL=ON \
+-D WITH_GSTREAMER=ON \
+-D WITH_FFMPEG=ON \
+-D OPENCV_GENERATE_PKGCONFIG=ON \
+-D OPENCV_PC_FILE_NAME=opencv4.pc \
+-D OPENCV_ENABLE_NONFREE=ON \
+-D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules \
+-D PYTHON3_LIBRARY=$CONDA_PREFIX/lib/python3.8 \
+-D PYTHON3_INCLUDE_DIR=$CONDA_PREFIX/include/python3.8 \
+-D PYTHON3_EXECUTABLE=$CONDA_PREFIX/bin/python \
+-D PYTHON3_PACKAGES_PATH=$CONDA_PREFIX/lib/python3.8/site-packages \
+-D PYTHON_DEFAULT_EXECUTABLE=$(which python3) \
+-D BUILD_EXAMPLES=ON ..
+```
+
+The requirement for the same is to have an Anaconda installed
