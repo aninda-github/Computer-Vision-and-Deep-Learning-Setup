@@ -401,10 +401,10 @@ Refer [here](https://pjreddie.com/darknet/yolo/) for more details on running YOL
 
 
 ##### Current Setup (Added by Aninda)
-- OS - ubuntu 20.04
-- Nvidia Driver - 460.73.01
-- CUDA - 11.2
-- CUDNN - 8.1.0
+- OS - Linux Mint 20.04 (Uma)
+- Nvidia Driver - 470.57.02
+- CUDA - 11.4
+- CUDNN - 8.2.0
 - OpenCV - 4.5.1
 
 Followed this article for installing the perfect version compatibility
